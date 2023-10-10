@@ -2,19 +2,19 @@
 Processus de mise-à-jour des tableaux de bord https://arssante.opendatasoft.com/pages/inspection-controle/
 
 ## critères de l'extraction SIICEA
-. date de début = date début du plan d'IC sur date réelle de visite
-. pas de date de fin
-. type d'établissement = EHPAD
-. statut de mission = tous
+- date de début = date début du plan d'IC sur date réelle de visite
+- pas de date de fin
+- type d'établissement = EHPAD
+- statut de mission = tous
 
 ## préparation des fichiers sources (extractions SIICEA)
 
 ### fichier missions
-. missions réalisées
+- missions réalisées
 type de cible = ehpad
 date réelle de visite comprise entre la date de début du plan d'IC et la date de fin d'extraction demandée par la DGCS (fin du trimestre)
 statut = maintenu ou clôturé
-. missions prévisionnelles
+- missions prévisionnelles
 type de cible = ehpad
 date réelle de visite = null
 date provisoire de visite > date choisie en date de fin pour le fichier des missions réalisées
