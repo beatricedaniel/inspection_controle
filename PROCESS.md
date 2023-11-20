@@ -45,7 +45,7 @@ table destination : t_finess_500
 table destination : ref_insee_communes
 
 ## préparation des fichiers output
-*export des requêtes vers des tables : 1 table / fichier
-*dans chaque table remplacer les libellés régions
-*dans chaque table remplacer niveaux géo en NC
+-export des requêtes vers des tables : 1 table / fichier
+-dans chaque table remplacer les libellés régions
+-dans chaque table remplacer niveaux géo en NC
 
