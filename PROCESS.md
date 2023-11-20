@@ -24,7 +24,8 @@ statut = maintenu ou reporté (?)
 ras
 
 ### t_finess
-filtrer sur caégorie = 500
+- filtrer sur caégorie = 500
+- supprimer les enregistrements obsolètes : étab fermés
 
 ## import des fichiers en BDD
 prérequis : convertir les fichiers .xlsx en .csv via le script convert_excel_to_csv.py 
