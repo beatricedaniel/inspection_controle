@@ -1,31 +1,22 @@
 # INSPECTION_CONTROLE
 Processus de mise-à-jour des tableaux de bord https://arssante.opendatasoft.com/pages/inspection-controle/
 
-## critères de l'extraction SIICEA
-- date de début = date début du plan d'IC sur date réelle de visite
-- pas de date de fin
-- type d'établissement = EHPAD
-- statut de mission = tous
-
 ## préparation des fichiers sources (extractions SIICEA)
-
-### fichier missions
-- missions réalisées
-type de cible = ehpad
-date réelle de visite comprise entre la date de début du plan d'IC et la date de fin d'extraction demandée par la DGCS (fin du trimestre)
-statut = maintenu ou clôturé
-- missions prévisionnelles
-type de cible = ehpad
-date réelle de visite = null
-date provisoire de visite > date choisie en date de fin pour le fichier des missions réalisées
-statut = maintenu ou reporté (?)
-
-### fichier décisions
-ras
-
-### t_finess
-- filtrer sur caégorie = 500
-- supprimer les enregistrements obsolètes : étab fermés
+### pour mission_EHPAD
+- type de cible = "Etablissements et Services pour Personnes Agées"
+- date réelle de visite >= début du programme d'IC
+- statut de mission != "abandonné" et "reporté"
+### pour mission_EHPAD_prog
+- type de cible = "Etablissements et Services pour Personnes Agées"
+- statut de mission != "abandonné"
+- date réelle de visite = NULL
+- date provisoire de visite >= date de l'extraction
+### pour SICEA_export_missions_Decisions_suivis
+- RAS
+### pour t_finess_500
+- https://www.data.gouv.fr/fr/datasets/referentiel-finess-t-finess/
+- etat = "ACTUEL"
+- categ_code = 500
 
 ## import des fichiers en BDD
 prérequis : convertir les fichiers .xlsx en .csv via le script convert_excel_to_csv.py 
