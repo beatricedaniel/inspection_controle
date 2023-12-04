@@ -4,10 +4,12 @@ Processus de mise-à-jour des tableaux de bord https://arssante.opendatasoft.com
 ## préparation des fichiers sources (extractions SIICEA)
 ### pour mission_EHPAD
 - type de cible = "Etablissements et Services pour Personnes Agées"
+- type de mission != Audit ; Audit franco-wallon
 - date réelle de visite >= début du programme d'IC
 - statut de mission != "abandonné" et "reporté"
 ### pour mission_EHPAD_prog
 - type de cible = "Etablissements et Services pour Personnes Agées"
+- - type de mission != Audit ; Audit franco-wallon
 - statut de mission != "abandonné"
 - date réelle de visite = NULL
 - date provisoire de visite >= date de l'extraction
