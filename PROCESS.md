@@ -35,6 +35,13 @@ table destination : SICEA_export_missions_Decisions_suivis
 ### finess
 table destination : t_finess_500
 
+### modifications a posteriori sur DWH
+- DWH_MISSIONS_AGG_COMMUNE:
+*Normandie
+*Saint-Pierre
+*Guadeloupe
+*Guadeloupe
+- 
 ### communes
 table destination : ref_insee_communes
 
