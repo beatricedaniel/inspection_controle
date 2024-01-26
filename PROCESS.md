@@ -50,3 +50,5 @@ table destination : ref_insee_communes
 - dans chaque table remplacer les libellés régions
 - dans chaque table remplacer niveaux géo en NC
 
+## traitements dans ODS
+- attention spécifique dernière version : filtre date réelle de visite <01/01/2024
