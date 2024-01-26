@@ -7,6 +7,7 @@ Processus de mise-à-jour des tableaux de bord https://arssante.opendatasoft.com
 - type de mission != Audit ; Audit franco-wallon
 - date réelle de visite >= début du programme d'IC
 - statut de mission != "abandonné" et "reporté"
+- attention spécifique dernière version : filtre date réelle de visite <01/01/2024
 ### pour mission_EHPAD_prog
 - type de cible = "Etablissements et Services pour Personnes Agées"
 - - type de mission != Audit ; Audit franco-wallon
@@ -49,6 +50,3 @@ table destination : ref_insee_communes
 - export des requêtes vers des tables : 1 table / fichier
 - dans chaque table remplacer les libellés régions
 - dans chaque table remplacer niveaux géo en NC
-
-## traitements dans ODS
-- attention spécifique dernière version : filtre date réelle de visite <01/01/2024
